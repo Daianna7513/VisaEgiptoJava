@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\Dayana\\Desktop\\DAIANNA_LEGUIZAMON_AA3_EV02\\lib\\mysql-connector-j-26.7.0.jar"
+    ]
+}
