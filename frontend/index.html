@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visa a Egipto</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Visa a Egipto</h1>
+        <p>Sistema de gestión de solicitudes de visa</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Registro de solicitud</h2>
+
+            <form id="formSolicitud">
+
+                <label for="nombre">Nombre del solicitante:</label>
+                <input type="text" id="nombre" required>
+
+                <label for="pasaporte">Número de pasaporte:</label>
+                <input type="text" id="pasaporte" required>
+
+                <label for="tipoVisa">Tipo de visa:</label>
+                <select id="tipoVisa" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="Turismo">Turismo</option>
+                    <option value="Negocios">Negocios</option>
+                    <option value="Estudio">Estudio</option>
+                </select>
+
+                <label for="fecha">Fecha de solicitud:</label>
+                <input type="date" id="fecha" required>
+
+                <label for="estado">Estado:</label>
+                <select id="estado" required>
+                    <option value="Pendiente">Pendiente</option>
+                    <option value="Aprobada">Aprobada</option>
+                    <option value="Rechazada">Rechazada</option>
+                </select>
+
+                <button type="submit">Registrar solicitud</button>
+
+            </form>
+        </section>
+
+        <section>
+            <h2>Solicitudes registradas</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Pasaporte</th>
+                        <th>Tipo de visa</th>
+                        <th>Fecha</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tablaSolicitudes">
+                </tbody>
+            </table>
+        </section>
+    </main>
+    
+<script src="script.js"></script>
+</body>
+</html>
